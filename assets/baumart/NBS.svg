@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" role="img" aria-label="NBS">
+  <rect width="120" height="140" fill="#fff"/>
+  <path d="M 60.0 138.0 L 60.0 22.0" stroke="#20291f" stroke-width="2.3" stroke-linecap="round"/>
+  <path d="M 60.0 113.9 C 69.9 115.0 78.9 108.6 82.2 103.1 C 75.7 102.3 65.2 105.4 60.0 113.9 Z" fill="#fff" stroke="#20291f" stroke-width="1.7" stroke-linejoin="round"/>
+  <path d="M 60.0 113.9 C 54.8 105.4 44.3 102.3 37.8 103.1 C 41.1 108.6 50.1 115.0 60.0 113.9 Z" fill="#fff" stroke="#20291f" stroke-width="1.7" stroke-linejoin="round"/>
+  <path d="M 60.0 100.4 C 70.4 101.6 79.9 94.8 83.4 89.0 C 76.6 88.1 65.5 91.4 60.0 100.4 Z" fill="#fff" stroke="#20291f" stroke-width="1.7" stroke-linejoin="round"/>
+  <path d="M 60.0 100.4 C 54.5 91.4 43.4 88.1 36.6 89.0 C 40.1 94.8 49.6 101.6 60.0 100.4 Z" fill="#fff" stroke="#20291f" stroke-width="1.7" stroke-linejoin="round"/>
+  <path d="M 60.0 86.9 C 70.6 88.1 80.2 81.2 83.8 75.3 C 76.9 74.4 65.6 77.8 60.0 86.9 Z" fill="#fff" stroke="#20291f" stroke-width="1.7" stroke-linejoin="round"/>
+  <path d="M 60.0 86.9 C 54.4 77.8 43.1 74.4 36.2 75.3 C 39.8 81.2 49.4 88.1 60.0 86.9 Z" fill="#fff" stroke="#20291f" stroke-width="1.7" stroke-linejoin="round"/>
+  <path d="M 60.0 73.4 C 70.3 74.5 79.7 67.9 83.2 62.0 C 76.5 61.2 65.4 64.5 60.0 73.4 Z" fill="#fff" stroke="#20291f" stroke-width="1.7" stroke-linejoin="round"/>
+  <path d="M 60.0 73.4 C 54.6 64.5 43.5 61.2 36.8 62.0 C 40.3 67.9 49.7 74.5 60.0 73.4 Z" fill="#fff" stroke="#20291f" stroke-width="1.7" stroke-linejoin="round"/>
+  <path d="M 60.0 59.8 C 69.7 61.0 78.5 54.7 81.7 49.3 C 75.4 48.5 65.1 51.5 60.0 59.8 Z" fill="#fff" stroke="#20291f" stroke-width="1.7" stroke-linejoin="round"/>
+  <path d="M 60.0 59.8 C 54.9 51.5 44.6 48.5 38.3 49.3 C 41.5 54.7 50.3 61.0 60.0 59.8 Z" fill="#fff" stroke="#20291f" stroke-width="1.7" stroke-linejoin="round"/>
+  <path d="M 60.0 46.3 C 68.7 47.3 76.6 41.7 79.5 36.8 C 73.9 36.1 64.6 38.8 60.0 46.3 Z" fill="#fff" stroke="#20291f" stroke-width="1.7" stroke-linejoin="round"/>
+  <path d="M 60.0 46.3 C 55.4 38.8 46.1 36.1 40.5 36.8 C 43.4 41.7 51.3 47.3 60.0 46.3 Z" fill="#fff" stroke="#20291f" stroke-width="1.7" stroke-linejoin="round"/>
+  <path d="M 60.0 32.8 C 67.5 33.7 74.3 28.8 76.8 24.6 C 71.9 24.0 63.9 26.4 60.0 32.8 Z" fill="#fff" stroke="#20291f" stroke-width="1.7" stroke-linejoin="round"/>
+  <path d="M 60.0 32.8 C 56.1 26.4 48.1 24.0 43.2 24.6 C 45.7 28.8 52.5 33.7 60.0 32.8 Z" fill="#fff" stroke="#20291f" stroke-width="1.7" stroke-linejoin="round"/>
+  <path d="M 60.0 38.6 C 64.5 31.9 63.0 23.3 60.0 19.0 C 57.0 23.3 55.5 31.9 60.0 38.6 Z" fill="#fff" stroke="#20291f" stroke-width="1.7" stroke-linejoin="round"/>
+</svg>

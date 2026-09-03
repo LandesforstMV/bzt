@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" role="img" aria-label="JLA">
+  <rect width="120" height="140" fill="#fff"/>
+  <path d="M 60.0 136.0 L 60.0 118.0" stroke="#20291f" stroke-width="3.4" stroke-linecap="round"/>
+  <ellipse cx="60.0" cy="118.0" rx="7" ry="5" fill="#fff" stroke="#20291f" stroke-width="2.3"/>
+  <path d="M 60.0 115.0 L 29.3 105.0" stroke="#20291f" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M 60.0 115.0 L 29.6 100.7" stroke="#20291f" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M 60.0 115.0 L 30.6 96.4" stroke="#20291f" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M 60.0 115.0 L 32.3 92.1" stroke="#20291f" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M 60.0 115.0 L 34.7 88.1" stroke="#20291f" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M 60.0 115.0 L 37.7 84.4" stroke="#20291f" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M 60.0 115.0 L 41.4 81.2" stroke="#20291f" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M 60.0 115.0 L 45.6 78.5" stroke="#20291f" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M 60.0 115.0 L 50.1 76.6" stroke="#20291f" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M 60.0 115.0 L 55.0 75.4" stroke="#20291f" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M 60.0 115.0 L 60.0 75.0" stroke="#20291f" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M 60.0 115.0 L 65.0 75.4" stroke="#20291f" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M 60.0 115.0 L 69.9 76.6" stroke="#20291f" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M 60.0 115.0 L 74.4 78.5" stroke="#20291f" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M 60.0 115.0 L 78.6 81.2" stroke="#20291f" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M 60.0 115.0 L 82.3 84.4" stroke="#20291f" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M 60.0 115.0 L 85.3 88.1" stroke="#20291f" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M 60.0 115.0 L 87.7 92.1" stroke="#20291f" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M 60.0 115.0 L 89.4 96.4" stroke="#20291f" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M 60.0 115.0 L 90.4 100.7" stroke="#20291f" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M 60.0 115.0 L 90.7 105.0" stroke="#20291f" stroke-width="1.4" stroke-linecap="round"/>
+</svg>

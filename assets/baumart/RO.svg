@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" role="img" aria-label="RO">
+  <rect width="120" height="140" fill="#fff"/>
+  <path d="M 60.0 138.0 L 60.0 22.0" stroke="#20291f" stroke-width="2.3" stroke-linecap="round"/>
+  <path d="M 60.0 110.9 C 68.8 117.4 76.3 112.2 78.9 105.5 C 73.1 101.1 64.0 100.7 60.0 110.9 Z" fill="#fff" stroke="#20291f" stroke-width="1.7" stroke-linejoin="round"/>
+  <path d="M 60.0 110.9 C 56.0 100.7 46.9 101.1 41.1 105.5 C 43.7 112.2 51.2 117.4 60.0 110.9 Z" fill="#fff" stroke="#20291f" stroke-width="1.7" stroke-linejoin="round"/>
+  <path d="M 60.0 92.4 C 69.3 99.3 77.2 93.8 79.9 86.7 C 73.8 82.1 64.2 81.6 60.0 92.4 Z" fill="#fff" stroke="#20291f" stroke-width="1.7" stroke-linejoin="round"/>
+  <path d="M 60.0 92.4 C 55.8 81.6 46.2 82.1 40.1 86.7 C 42.8 93.8 50.7 99.3 60.0 92.4 Z" fill="#fff" stroke="#20291f" stroke-width="1.7" stroke-linejoin="round"/>
+  <path d="M 60.0 73.9 C 69.1 80.6 76.8 75.2 79.4 68.3 C 73.5 63.8 64.1 63.3 60.0 73.9 Z" fill="#fff" stroke="#20291f" stroke-width="1.7" stroke-linejoin="round"/>
+  <path d="M 60.0 73.9 C 55.9 63.3 46.5 63.8 40.6 68.3 C 43.2 75.2 50.9 80.6 60.0 73.9 Z" fill="#fff" stroke="#20291f" stroke-width="1.7" stroke-linejoin="round"/>
+  <path d="M 60.0 55.3 C 68.2 61.4 75.2 56.6 77.6 50.3 C 72.3 46.2 63.7 45.8 60.0 55.3 Z" fill="#fff" stroke="#20291f" stroke-width="1.7" stroke-linejoin="round"/>
+  <path d="M 60.0 55.3 C 56.3 45.8 47.7 46.2 42.4 50.3 C 44.8 56.6 51.8 61.4 60.0 55.3 Z" fill="#fff" stroke="#20291f" stroke-width="1.7" stroke-linejoin="round"/>
+  <path d="M 60.0 36.8 C 66.9 41.9 72.8 37.8 74.8 32.6 C 70.3 29.2 63.1 28.8 60.0 36.8 Z" fill="#fff" stroke="#20291f" stroke-width="1.7" stroke-linejoin="round"/>
+  <path d="M 60.0 36.8 C 56.9 28.8 49.7 29.2 45.2 32.6 C 47.2 37.8 53.1 41.9 60.0 36.8 Z" fill="#fff" stroke="#20291f" stroke-width="1.7" stroke-linejoin="round"/>
+  <path d="M 60.0 35.0 C 67.2 29.8 64.8 23.0 60.0 19.7 C 55.2 23.0 52.8 29.8 60.0 35.0 Z" fill="#fff" stroke="#20291f" stroke-width="1.7" stroke-linejoin="round"/>
+</svg>

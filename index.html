@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BASTAKLIM – BZT-Filter nach Klimastufe, Standort und Baumart</title>
+<link rel="icon" href="assets/favicon.ico">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Startbild: erscheint zuerst, Klick öffnet die Anwendung -->
+<div class="splash" id="splash">
+  <div class="splash-bild">
+    <img id="splash-img" src="assets/front.PNG" alt="">
+    <div class="splash-ersatz" id="splash-ersatz">
+      <h1>BASTAKLIM</h1>
+      <p>Digitale Baumarten-Standort-Klima Anwendung</p>
+      <span class="splash-linie"></span>
+    </div>
+  </div>
+  <div class="splash-fuss">
+    <div class="ladebalken"><i id="ladebalken-fuellung"></i></div>
+    <p class="splash-hinweis" id="splash-hinweis">wird geladen …</p>
+  </div>
+</div>
+
+<header class="app-header">
+  <div class="brand">
+    <button type="button" class="sidebar-schalter" id="sidebar-schalter"
+            aria-label="Seitenleiste ein- und ausblenden" aria-expanded="true">☰</button>
+    <span class="brand-mark logo-slot" aria-hidden="true">
+      <img data-logo="logo" alt="">
+    </span>
+    <span>
+      <strong>BZT-Filter</strong>
+      <small>Bestandeszieltypen · Klimastufe → Standort → BZT → Baumart</small>
+    </span>
+  </div>
+
+  <div class="brand-mitte logo-slot">
+    <img data-logo="logo_lf" alt="">
+  </div>
+
+  <div class="header-tools">
+    <div class="result-badge">
+      <b id="result-count">–</b>
+      <span>Kombinationen</span>
+    </div>
+    <label class="switch" title="Optionen, die mit der aktuellen Auswahl nicht möglich sind, ausgegraut anzeigen statt ausblenden">
+      <input type="checkbox" id="show-unavailable">
+      <span>Nicht mögliche zeigen</span>
+    </label>
+    <button type="button" class="btn" id="reset-all">Alles zurücksetzen</button>
+  </div>
+</header>
+
+<div class="layout" id="layout">
+
+  <aside class="sidebar" id="sidebar">
+    <section class="karte">
+      <h2>BASTAKLIM v3.1 Beta</h2>
+      <div class="karte-inhalt">
+        <p>JP. Nasse</p>
+        <p>Dr. E.A. Thurm</p>
+        <a class="external" target="_blank" rel="noopener"
+           href="mailto:bastaklim@lfoa-mv.de?cc=mv.de&amp;subject=BASTAKLIM%20Feedback">bastaklim@lfoa-mv.de</a>
+      </div>
+      <footer>BT-FVI - Waldbau – 2026</footer>
+    </section>
+
+    <section class="karte">
+      <h2>Quellen</h2>
+      <div class="karte-inhalt">
+        <a href="dokumente/BZT_Erlass.pdf" target="_blank" rel="noopener">BZT-Erlass (PDF)</a>
+        <a href="dokumente/Klimastufen_BZT.pdf" target="_blank" rel="noopener">Klimastufen-Karte (PDF)</a>
+      </div>
+    </section>
+
+    <section class="karte">
+      <h2>Auswahl</h2>
+      <div class="karte-inhalt" id="sidebar-status">
+        <p>keine Filter gesetzt</p>
+      </div>
+      <div class="karte-inhalt">
+        <button type="button" class="btn btn--klein" id="sidebar-reset">zurücksetzen</button>
+        <button type="button" class="btn btn--klein" id="sidebar-csv">als CSV speichern</button>
+        <button type="button" class="btn btn--klein" id="sidebar-druck">Standortblatt drucken</button>
+      </div>
+    </section>
+
+    <section class="karte logo-karte" id="sidebar-logos" hidden>
+      <div class="karte-inhalt sidebar-logos">
+        <span class="logo-slot"><img data-logo="logo1" alt=""></span>
+        <span class="logo-slot"><img data-logo="logo2" alt=""></span>
+        <span class="logo-slot"><img data-logo="logo3" alt=""></span>
+        <span class="logo-slot"><img data-logo="logo4" alt=""></span>
+      </div>
+    </section>
+  </aside>
+
+  <div class="inhalt">
+
+    <p class="active-filters" id="active-filters" hidden></p>
+
+    <main class="columns" id="columns">
+
+      <section class="col" data-facet="kli">
+        <header class="col-head">
+          <h2>Klimastufe</h2>
+          <span class="col-count"><b data-count>–</b><span data-total></span></span>
+          <button type="button" class="col-clear" data-clear hidden aria-label="Auswahl Klimastufe löschen">Auswahl löschen</button>
+        </header>
+        <div class="col-tools">
+          <input type="search" class="col-search" data-search placeholder="Klimastufe suchen …" aria-label="Klimastufe suchen">
+        </div>
+        <div class="tiles" data-tiles></div>
+        <p class="col-empty" data-empty hidden>Keine Treffer.</p>
+      </section>
+
+      <section class="col" data-facet="stgr">
+        <header class="col-head">
+          <h2>Standort</h2>
+          <span class="col-count"><b data-count>–</b><span data-total></span></span>
+          <button type="button" class="col-clear" data-clear hidden aria-label="Auswahl Standort löschen">Auswahl löschen</button>
+        </header>
+        <div class="col-tools">
+          <input type="search" class="col-search" data-search placeholder="Standortgruppe suchen …" aria-label="Standortgruppe suchen">
+        </div>
+        <div class="tiles" data-tiles></div>
+        <p class="col-empty" data-empty hidden>Keine Treffer.</p>
+      </section>
+
+      <section class="col" data-facet="bzt">
+        <header class="col-head">
+          <h2>BZT</h2>
+          <span class="col-count"><b data-count>–</b><span data-total></span></span>
+          <button type="button" class="col-clear" data-clear hidden aria-label="Auswahl BZT löschen">Auswahl löschen</button>
+        </header>
+        <div class="col-tools">
+          <input type="search" class="col-search" data-search placeholder="Bestandeszieltyp suchen …" aria-label="Bestandeszieltyp suchen">
+        </div>
+        <div class="tiles" data-tiles></div>
+        <p class="col-empty" data-empty hidden>Keine Treffer.</p>
+      </section>
+
+      <section class="col" data-facet="ba">
+        <header class="col-head">
+          <h2>Baumart</h2>
+          <span class="col-count"><b data-count>–</b><span data-total></span></span>
+          <button type="button" class="col-clear" data-clear hidden aria-label="Auswahl Baumart löschen">Auswahl löschen</button>
+        </header>
+        <div class="col-tools">
+          <input type="search" class="col-search" data-search placeholder="Baumart suchen …" aria-label="Baumart suchen">
+          <div class="seg" role="group" aria-label="Verknüpfung mehrerer Baumarten">
+            <button type="button" data-bamode="und" class="is-on" aria-pressed="true" title="Nur BZT, die alle gewählten Baumarten enthalten">alle</button>
+            <button type="button" data-bamode="oder" aria-pressed="false" title="BZT, die mindestens eine der gewählten Baumarten enthalten">eine</button>
+          </div>
+        </div>
+        <p class="col-hint">sortiert nach Maximalanteil</p>
+        <div class="tiles" data-tiles></div>
+        <p class="col-empty" data-empty hidden>Keine Treffer.</p>
+      </section>
+
+    </main>
+
+    <section class="results" id="results">
+      <header class="results-head">
+        <h2>Ergebnis</h2>
+        <p id="results-summary"></p>
+        <button type="button" class="btn" id="drucken">Standortblatt drucken</button>
+        <button type="button" class="btn" id="export-csv">Als CSV speichern</button>
+      </header>
+      <div class="druckkopf" id="druckkopf" aria-hidden="true"></div>
+      <div id="results-body"></div>
+    </section>
+
+    <footer class="app-footer">
+      <div class="footer-text">
+        <span id="meta-line"></span>
+        <span>Quellen:
+          <a href="dokumente/BZT_Erlass.pdf" target="_blank" rel="noopener">BZT-Erlass (PDF)</a> ·
+          <a href="dokumente/Klimastufen_BZT.pdf" target="_blank" rel="noopener">Klimastufen-Karte (PDF)</a>
+        </span>
+      </div>
+      <div class="footer-logos">
+        <span class="logo-slot"><img data-logo="logo1" alt=""></span>
+        <span class="logo-slot"><img data-logo="logo2" alt=""></span>
+        <span class="logo-slot"><img data-logo="logo3" alt=""></span>
+        <span class="logo-slot"><img data-logo="logo4" alt=""></span>
+      </div>
+    </footer>
+
+  </div>
+</div>
+
+<div class="viewer" id="viewer" hidden>
+  <div class="viewer-fenster" role="dialog" aria-modal="true" aria-labelledby="viewer-titel">
+    <header class="viewer-kopf">
+      <div>
+        <h2 id="viewer-titel"></h2>
+        <p id="viewer-sub"></p>
+      </div>
+      <button type="button" class="viewer-zu" aria-label="Schließen">×</button>
+    </header>
+    <div class="viewer-buehne">
+      <button type="button" id="viewer-zurueck" class="viewer-pfeil" aria-label="vorige Seite">‹</button>
+      <img id="viewer-bild" alt="">
+      <p id="viewer-hinweis" class="viewer-hinweis" hidden>
+        Für diese Seite liegt kein Bild unter <code>assets/seiten/</code>.
+        Bitte <code>python3 tools/extract_images.py</code> ausführen oder das
+        PDF über den Link unten öffnen.
+      </p>
+      <button type="button" id="viewer-weiter" class="viewer-pfeil" aria-label="nächste Seite">›</button>
+    </div>
+    <footer class="viewer-fuss">
+      <span id="viewer-blatt"></span>
+      <a id="viewer-pdf" href="#" target="_blank" rel="noopener">Original-PDF öffnen ↗</a>
+    </footer>
+  </div>
+</div>
+
+<script src="data/bzt_data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 137 98" role="img" aria-label="Standort TM1w: Nährkraft M, frisch">
+<rect width="137" height="98" fill="#fff"/>
+<rect x="88.0" y="40.0" width="15.0" height="13.5" fill="#69c94b"/>
+<line x1="58.0" y1="26.5" x2="133.0" y2="26.5" stroke="#c8cfc8" stroke-width="1"/>
+<line x1="58.0" y1="40.0" x2="133.0" y2="40.0" stroke="#c8cfc8" stroke-width="1"/>
+<line x1="58.0" y1="53.5" x2="133.0" y2="53.5" stroke="#c8cfc8" stroke-width="1"/>
+<line x1="58.0" y1="67.0" x2="133.0" y2="67.0" stroke="#c8cfc8" stroke-width="1"/>
+<line x1="58.0" y1="80.5" x2="133.0" y2="80.5" stroke="#c8cfc8" stroke-width="1"/>
+<line x1="73.0" y1="13.0" x2="73.0" y2="94.0" stroke="#c8cfc8" stroke-width="1"/>
+<line x1="88.0" y1="13.0" x2="88.0" y2="94.0" stroke="#c8cfc8" stroke-width="1"/>
+<line x1="103.0" y1="13.0" x2="103.0" y2="94.0" stroke="#c8cfc8" stroke-width="1"/>
+<line x1="118.0" y1="13.0" x2="118.0" y2="94.0" stroke="#c8cfc8" stroke-width="1"/>
+<rect x="58.0" y="13.0" width="75.0" height="81.0" fill="none" stroke="#3a463c" stroke-width="1.6"/>
+<rect x="88.0" y="40.0" width="15.0" height="13.5" fill="none" stroke="#20291f" stroke-width="2"/>
+<text x="65.5" y="9.5" font-size="9.0" font-family="sans-serif" text-anchor="middle" fill="#5d6b63">A</text>
+<text x="80.5" y="9.5" font-size="9.0" font-family="sans-serif" text-anchor="middle" fill="#5d6b63">Z</text>
+<text x="95.5" y="9.5" font-size="9.0" font-family="sans-serif" text-anchor="middle" fill="#5d6b63">M</text>
+<text x="110.5" y="9.5" font-size="9.0" font-family="sans-serif" text-anchor="middle" fill="#5d6b63">K</text>
+<text x="125.5" y="9.5" font-size="9.0" font-family="sans-serif" text-anchor="middle" fill="#5d6b63">R</text>
+<text x="54.0" y="22.6" font-size="8.4" font-family="sans-serif" text-anchor="end" fill="#5d6b63">trocken</text>
+<text x="54.0" y="36.0" font-size="8.4" font-family="sans-serif" text-anchor="end" fill="#5d6b63">mäßig frisch</text>
+<text x="54.0" y="49.5" font-size="8.4" font-family="sans-serif" text-anchor="end" fill="#20291f" font-weight="700">frisch</text>
+<text x="54.0" y="63.0" font-size="8.4" font-family="sans-serif" text-anchor="end" fill="#5d6b63">feucht</text>
+<text x="54.0" y="76.5" font-size="8.4" font-family="sans-serif" text-anchor="end" fill="#5d6b63">nass</text>
+<text x="54.0" y="90.0" font-size="8.4" font-family="sans-serif" text-anchor="end" fill="#5d6b63">sumpfig</text>
+<text x="134.0" y="96.0" font-size="9" font-weight="700" font-family="sans-serif" text-anchor="end" fill="#20291f">w</text>
+</svg>
